@@ -193,6 +193,7 @@ header .follow a:hover{
 
 .home .image img{
     width:100%;
+    
 }
 
 .home .content{
@@ -853,6 +854,28 @@ header .follow a:hover{
         padding-left: 40px;
         
     }
+    th{
+        font-size:2.0em;
+        text-align: left;
+        padding-left: 3px;
+        color:  #a6a6a6;
+    }
+    .h11{
+        color: #e6e6e6;
+        font-size:2.2em;
+        text-align: left;
+        padding-left: 3px;
+    }
+    td{
+        font-size: 1.7rem;
+        color:#999999;
+        padding:.5rem 0;
+    }
+    .textt{
+        font-size: 1.9rem;
+        color: #a6a6a6;;
+        padding:.5rem 0;
+    }
 }
 
   
@@ -894,6 +917,28 @@ header .follow a:hover{
       .divc{
         padding-left: 40px;
     }  
+    th{
+        font-size:2.0em;
+        text-align: left;
+        padding-left: 3px;
+        color:  #a6a6a6;
+    }
+    .h11{
+        color: #e6e6e6;
+        font-size:2.2em;
+        text-align: left;
+        padding-left: 3px;
+    }
+    td{
+        font-size: 1.7rem;
+        color:#999999;
+        padding:.5rem 0;
+    }
+    .textt{
+        font-size: 1.9rem;
+        color: #a6a6a6;;
+        padding:.5rem 0;
+    }
 
       
 }
