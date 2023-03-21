@@ -241,7 +241,7 @@ header .follow a:hover{
 .about .row-1 .image img{
     height: 100%;
     width:100%;
-    object-fit: cover;
+    object-fit: fill;
     border:1rem solid #fff;
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -466,7 +466,7 @@ header .follow a:hover{
 .portfolio .box-container .box img{
     height:100%;
     width:100%;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: .5rem;
     position: relative;
     z-index: 1;
@@ -606,74 +606,12 @@ header .follow a:hover{
 }
 
 
-@media (max-width:991px){
 
-    html{
-        font-size: 55%;
-    }
-    
-    body{
-        padding: 0;
-    }
-
-    #menu-bars{
-        display: initial;
-    }
-
-    header{
-        left:-120%;
-    }
-
-    header.active{
-        left:0%;
-    }
-
-    .cursor-1,
-    .cursor-2{
-        display: none;
-    }
-
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
-    header{
-        width:100%;
-    }
-
-    .experience .box-container .box{
-        padding-right: 0;
-    }
-    th{
-        font-size:2.3em;
-        font-weight: 400;
-        text-align: left;
-        padding-left: 3px;
-    }
-    td{
-        font-size:2.3em;
-    }
-    .blogs {
-        -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-      }
-
-      .blogs-content {
-        padding-bottom: 6rem;
-        -ms-grid-columns: 1fr;
-            grid-template-columns: 1fr;
-      }
-}
 
 .blogs-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     margin-top: 3rem;
   }
@@ -691,11 +629,11 @@ header .follow a:hover{
   .blogs-content .blog img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: fill;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: fill;
+       object-fit: fill;
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
     -webkit-transition: var(--transition-04);
@@ -712,7 +650,7 @@ header .follow a:hover{
   }
   
   .blogs-content .blog:hover img {
-    object-fit: cover;
+    object-fit: fill;
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
     -webkit-transform: scale(1.1);
@@ -721,6 +659,8 @@ header .follow a:hover{
             box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.8);
   }
   
+
+
   .blogs-content .blog .blog-text {
     padding: 1.1rem;
     margin-top: -5px;
@@ -764,8 +704,7 @@ header .follow a:hover{
   .portfolios {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
   }
@@ -778,8 +717,8 @@ header .follow a:hover{
   .portfolios .portfolio-item img {
     width: 100%;
     height: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: fill;
+       object-fit: fill;
     border-radius: 15px;
   }
   
@@ -871,4 +810,90 @@ header .follow a:hover{
   }
   
   
+  @media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    body{
+        padding: 0;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+
+    header{
+        left:-120%;
+    }
+
+    header.active{
+        left:0%;
+    }
+
+    .cursor-1,
+    .cursor-2{
+        display: none;
+    }
+    .portfolios {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin-top: 3rem;
+      }
+
+    .blogs-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin-top: 3rem;
+      }  
+      .divc{
+        padding-left: 40px;
+        
+    }
+}
+
   
+
+@media screen and (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+    .portfolios {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-gap: 2rem;
+        margin-top: 3rem;
+      }
+
+    header{
+        width:100%;
+    }
+
+    .experience .box-container .box{
+        padding-right: 0;
+    }
+    th{
+        font-size:2.3em;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 3px;
+    }
+    td{
+        font-size:2.3em;
+    }
+    .blogs-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin-top: 3rem;
+      }  
+      .divc{
+        padding-left: 40px;
+    }  
+
+      
+}
