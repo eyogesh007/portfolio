@@ -4,6 +4,8 @@
     --main-color:#27AE60;
 }
 
+
+
 .textt{
     font-size: 2.2rem;
     color: #a6a6a6;;
@@ -188,6 +190,7 @@ header .follow a:hover{
 }
 
 .home .image{
+
     flex:1 1 40rem;
 }
 
@@ -942,3 +945,4 @@ header .follow a:hover{
 
       
 }
+
